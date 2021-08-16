@@ -1,9 +1,17 @@
+# Feddit
 
-
-### Handy Tidbits
-
-- If a function returns a promise, await.
-- process.env.NODE_ENV is handy for determining what environment you're in (dev/prod/etc).
+A fake Reddit app using:
+- React
+- TypeScript
+- GraphQL
+- URQL/Apollo
+- Node.js
+- PostgreSQL
+- MikroORM/TypeORM
+- Redis
+- Next.js
+- TypeGraphQL
+- Chakra
 
 ## Notes
 
@@ -13,7 +21,7 @@ ORM allows us to convert data between incompatible type-systems using object-ori
 
 What the fuck does this mean?
 
-Well, SQL database management systems (DBMS) can classically only store and manipulate scalar values (simple stuff: integers/strings/etc) because they aren't object-oriented. This isn't particularly convenient for us; not one bit.
+Well, SQL database management systems (DBMS) can classically only store and manipulate scalar values (simple stuff: integers/strings/etc) because they aren't object-oriented. This isn't particularly convenient for us...
 
 ![Not one bit](https://i.makeagif.com/media/10-31-2016/XYVC0n.gif)
 
@@ -21,6 +29,11 @@ So we rely on ORMs to convert object values into groups of scalars that our DB c
 
 Que microORM to make this extra convenient for us. Woot woot.
 
+
+### Handy Tidbits
+
+- If a function returns a promise, await.
+- process.env.NODE_ENV is handy for determining what environment you're in (dev/prod/etc).
 
 ### Handy Commands
 

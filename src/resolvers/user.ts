@@ -26,4 +26,13 @@ export class UserResolver {
     await em.persistAndFlush(user);
     return user;
   }
+
+  @Mutation(() => User)
+  async login(
+    @Arg('options') options: UsernamePasswordInput,
+    @Ctx() {em}: MyContext
+  ) {
+    const hash = await argon2.hash(options.password);
+    const user = em.findOne(User, { options.username });
+  }
 }
